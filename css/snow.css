@@ -1,0 +1,63 @@
+
+.snow-animation-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 999999;
+}
+
+.snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/Snow-PNG-Transparent-Image.png');
+    background-repeat: repeat;
+}
+
+.snow.s1 {
+    animation: snow1 22s linear infinite;
+    filter: blur(.5px);
+    background-size: 1200px;
+}
+
+.snow.s2 {
+    animation: snow2 7s linear infinite;
+    background-size: 800px;
+    filter: blur(2px);
+}
+
+.snow.s3 {
+    animation: snow3 5s linear infinite;
+    filter: blur(1px);
+    background-size: 100px;
+}
+
+@keyframes snow1 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100px 500px;
+    }
+}
+
+@keyframes snow2 {
+    0% {
+        background-position: 0px -100px;
+    }
+    100% {
+        background-position: 0 640px;
+    }
+}
+
+@keyframes snow3 {
+    0% {
+        background-position: 100px 400px;
+    }
+    100% {
+        background-position: 200px 640px;
+    }
+}

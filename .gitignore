@@ -1,0 +1,14 @@
+# Environmental Vars
+**/.env
+
+# Dependency directories
+**/node_modules
+
+#npm logs file
+**/npm-debug.log
+
+# .idea IDE folder
+**/.idea
+
+# .idea IDE folder
+**/.vscode

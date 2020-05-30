@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="./css/master.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/jquery.js" defer></script>
+    <script type="text/javascript" src="./js/moment.min.js" defer></script>
+    <script type="text/javascript" src="./js/script.js" defer></script>
+    <script type="text/javascript" id="snowOverLay" src="./js/rain.js" defer></script>
+</head>
+<body>
+<div id="weatherOverLay" class="background-overlay show">
+    <canvas id="canvas"></canvas>
+</div>
+<nav class="navbar navbar-toggleable-md fixed-top navbar-transparent">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="https://www.akashsairaja.esy.es">
+                <img src="img/logo.png" style="margin-top: -10px ; background-color: transparent"/>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="Twitter" data-placement="bottom"
+                       href="https://twitter.com/akashsairaja" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="Facebook" data-placement="bottom"
+                       href="https://www.facebook.com/akashsairaja" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="Instagram" data-placement="bottom"
+                       href="https://www.instagram.com/akashsairaja" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="GitHub" data-placement="bottom"
+                       href="https://www.github.com/akashsairaja" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="g-mail" data-placement="bottom"
+                       href="https://www.gmail.com/" target="_blank">
+                        <i class="fa fa-google"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="youtube" data-placement="bottom"
+                       href="https://www.gmail.com/" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="nav-item" id="location">
+
+                </li>
+                <li class="nav-item node-update" id="addWeather">
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Dont Touch-->
+<div class="wrapper">
+    <div class="page-header section-dark"
+         style="background-image: url('https://source.unsplash.com/random/1280x720?snow,mountains')">
+        <div class="d-flex just-content-center">
+            <div class="container">
+                <h6 id="date" class="presentation-title time-center py-2"></h6>
+                <h6 id="time" class="presentation-title time-center py-2"></h6>
+                <div class="title-brand">
+                    <h1 data-heading="!" id="greeting" class="presentation-title"></h1>
+                </div>
+                <hr class="line-brk mt-3"/>
+                <h2 id="headline" class="presentation-subtitle text-center pt-4"></h2>
+                <p id="author" class="presentation-subtitle-down text-center"></p>
+            </div>
+        </div>
+        <div class="moving-clouds" style="background-image: url('./img/clouds.png'); ">
+        </div>
+    </div>
+</div>
+
+<!--Floating Menu -->
+<div id="floating-menu">
+    <div id="floating-icon" onclick="this">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="floating-music" style="display: block;">
+        <a href="https://www.spotify.com/in/" target="_blank">
+            <i class="fa fa-spotify" style="display:flex;"></i>
+        </a>
+    </div>
+    <div id="floating-whatsapp" style="display: block;">
+        <a href="https://web.whatsapp.com/" target="_blank">
+        <i class="fa fa-whatsapp" style="display:flex;"></i>
+        </a>
+    </div>
+    <div id="floating-search" style="display: block;">
+        <a href="https://www.google.com/" target="_blank">
+            <i class="fa fa-search" style="display:flex;"></i>
+        </a>
+    </div>
+</div>
+</body>
+</html>
