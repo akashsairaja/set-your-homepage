@@ -16,7 +16,7 @@
     - [x] weather.
     - [x] quick navigation.
     
--Quick navigation.
+- Quick navigation.
     - [x] Facebook
     - [x] Twitter.
     - [x] Github.
